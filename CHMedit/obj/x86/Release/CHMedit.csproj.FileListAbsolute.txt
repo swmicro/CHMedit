@@ -1,0 +1,14 @@
+C:\Projects\MSVS\CHMedit\CHMedit\bin\Release\CHMedit.exe.manifest
+C:\Projects\MSVS\CHMedit\CHMedit\bin\Release\CHMedit.application
+C:\Projects\MSVS\CHMedit\CHMedit\bin\Release\CHMedit.exe
+C:\Projects\MSVS\CHMedit\CHMedit\bin\Release\CHMedit.pdb
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.Form1.resources
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.Properties.Resources.resources
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.TrustInfo.xml
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.exe.manifest
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.application
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.exe
+C:\Projects\MSVS\CHMedit\CHMedit\obj\x86\Release\CHMedit.pdb

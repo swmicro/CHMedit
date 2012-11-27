@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.16" name="CHMedit.exe" publicKeyToken="5069808eec7e8c78" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="1351881891_file_extension_chm.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CHMedit" version="1.0.0.10" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CHMedit.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHMedit.exe" size="32256">
+      <assemblyIdentity name="CHMedit" version="1.0.0.10" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9+2N+qZAd9Vg9JtLGOlzJx7RaHE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="1351881891_file_extension_chm.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EwsMtQbijAnituDDQbOx5sPnRYI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=AMI-19A0F0265DF\vyacheslava" issuerKeyHash="2b2e93f63cdaeb354cffc99741e537848732809c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>PiTUnz0xOjzEAOad/GBa0+Yaul4=</DigestValue></Reference></SignedInfo><SignatureValue>knZzDDQJXgyHPp62e+S6JvxrkYvsQ/RfwGqUAMztgbls2AcfGYbBSA6qsu8QvmFI3ruWpHfey6ZiA7pl9buS9mgnyxTMmQuE4NR+YUeWxBXkhZkOB9Xh0hYApL36+CofrAczBQWD0AMeuv1Ta5mp30pij5IR4RgBT3UfGSMFHUw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wft8PrLnDXQZBhK208gMXm7uUhC/0psSbxWIGVCot2FJ/OfNaWdN8mjxUM+EbEMsxbZqBbpK7VwhAwui4u0/bdk6DUxPBWPgCZ3ANWfkeOTxyesudAa7MZ+klsMr0SxOksHaQGycft8JrQ2XokTORQLiJtnh3YUvJv2aYSJGaec=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5eba1ae6d35a60fc9de600c43c3a313d9fd4243e" Description="" Url=""><as:assemblyIdentity version="1.0.0.16" name="CHMedit.exe" publicKeyToken="5069808eec7e8c78" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AMI-19A0F0265DF\vyacheslava</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>zO7feWKUrLSwlrJRl4CC16mecJ0=</DigestValue></Reference></SignedInfo><SignatureValue>p++lpIHekcv9Pe8xebHc9cBArgl51Oe+lf655wTsbYZGgzmDlq7SwgpJxvPKiIgwRZ27Zyl+OoQZD/rtXAklVeriBhbCK9DZRjZykjBQb5C8hMzpw40Yc81UzTQtngVOhAyHE0Kf2V3WfjWzAk37KvHrAeDwkxZKm6+AkuoNQtw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wft8PrLnDXQZBhK208gMXm7uUhC/0psSbxWIGVCot2FJ/OfNaWdN8mjxUM+EbEMsxbZqBbpK7VwhAwui4u0/bdk6DUxPBWPgCZ3ANWfkeOTxyesudAa7MZ+klsMr0SxOksHaQGycft8JrQ2XokTORQLiJtnh3YUvJv2aYSJGaec=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWqgAwIBAgIQaOPF+nx1Hq1Ns7twaJRp6TAJBgUrDgMCHQUAMEExPzA9BgNVBAMeNgBBAE0ASQAtADEAOQBBADAARgAwADIANgA1AEQARgBcAHYAeQBhAGMAaABlAHMAbABhAHYAYTAeFw0xMjExMDEyMTQ5MDBaFw0xMzExMDIwMzQ5MDBaMEExPzA9BgNVBAMeNgBBAE0ASQAtADEAOQBBADAARgAwADIANgA1AEQARgBcAHYAeQBhAGMAaABlAHMAbABhAHYAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwft8PrLnDXQZBhK208gMXm7uUhC/0psSbxWIGVCot2FJ/OfNaWdN8mjxUM+EbEMsxbZqBbpK7VwhAwui4u0/bdk6DUxPBWPgCZ3ANWfkeOTxyesudAa7MZ+klsMr0SxOksHaQGycft8JrQ2XokTORQLiJtnh3YUvJv2aYSJGaecCAwEAATAJBgUrDgMCHQUAA4GBALNLqYKxO776UJZRbcTpHDBsNskgMWy5xp0+udyvJp9fUJ65XvtylwHIxjWv4t9XRMOJbGa9ruCmxOil88XYaSDvCJShLhinphMK7LrK/mbsyLwIWTicfNttPBl6zo+aSQcMQJQ+zr2O1nWtVr6b1AbeFFjMWjbK8qNrfkw7UYEb</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
