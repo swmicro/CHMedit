@@ -41,24 +41,17 @@ namespace CHMedit
             else
                 editorFileName = "notepad";
 
-            if (File.Exists(@"C:\Program Files (x86)\HTML Help Workshop\hhc.exe"))
-            {
+            if ( File.Exists( @"C:\Program Files (x86)\HTML Help Workshop\hhc.exe") )
                 hhcFilePath = @"C:\Program Files (x86)\HTML Help Workshop\hhc.exe";
-                hhFilePath = @"C:\Program Files (x86)\HTML Help Workshop\hh.exe";
-            }
-            else if (File.Exists(@"C:\Program Files\HTML Help Workshop\hhc.exe"))
-            {
-                hhcFilePath = @"C:\Program Files\HTML Help Workshop\hhc.exe";
-                hhFilePath = @"C:\Program Files\HTML Help Workshop\hh.exe";
-            } 
+            else if ( File.Exists(@"C:\Program Files\HTML Help Workshop\hhc.exe") )
+                hhcFilePath     = @"C:\Program Files\HTML Help Workshop\hhc.exe";
             else
                 toolStripStatusLabel1.Text = "Error: HTML Help Workshop is not found!";
 
-            if (hhcFilePath != null)
-                SetAcl(Path.GetDirectoryName(hhcFilePath));
-
-            if (hhcFilePath != null)
-                SetAcl(Path.GetDirectoryName(hhFilePath));
+            if (File.Exists(Environment.GetEnvironmentVariable("windir") + @"\hh.exe"))
+                hhFilePath = Environment.GetEnvironmentVariable("windir") + @"\hh.exe";
+            else
+                toolStripStatusLabel1.Text = "Error: hh.exe is not found!";
         }
 
         private bool openCHMFile()
@@ -74,7 +67,7 @@ namespace CHMedit
             {
                 fileName = openFileDialog1.FileName.ToString();
                 fullFileName = Path.GetFullPath(fileName);
-                SetAcl(fullFileName);
+                //SetAcl(fullFileName);
                 projectFileName = Path.GetFileName(fileName);
                 projectFileName = projectFileName.Replace(".chm", "");
 
@@ -83,7 +76,7 @@ namespace CHMedit
                     Directory.Delete(Path.GetFullPath(outputDir), true);
                 Directory.CreateDirectory(outputDir);
                 SetAccessRule(outputDir);
-                SetAcl(outputDir);
+                //SetAcl(outputDir);
 
                 result = true;
             }
@@ -138,7 +131,7 @@ namespace CHMedit
             Directory.SetAccessControl(directory, sec);
         }
 
-        static bool SetAcl(string directory)
+        /*static bool SetAcl(string directory)
         {
             FileSystemRights Rights = (FileSystemRights)0;
             Rights = FileSystemRights.FullControl;
@@ -182,7 +175,7 @@ namespace CHMedit
             Info.SetAccessControl(Security);
 
             return true;
-        }
+        }*/
 
         private void openCHM()
         {
